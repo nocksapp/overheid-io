@@ -6,7 +6,7 @@ use \Exception;
 
 abstract class Ovio
 {
-    protected $base_url = 'https://overheid.io';
+    protected $base_url = 'https://api.overheid.io';
     protected $api_key;
     protected $api_name;
 
