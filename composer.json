@@ -1,7 +1,7 @@
 {
-    "name": "webeau/overheid-io",
+    "name": "nocksapp/overheid-io",
     "description": "PHP wrapper for Overheid.io",
-    "homepage": "https://github.com/webeaunl/overheid-io",
+    "homepage": "https://github.com/nocksapp/overheid-io",
     "keywords": ["overheid.io", "ovio", "kvk", "rdw", "api"],
     "license": "MIT",
     "authors": [
