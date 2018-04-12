@@ -59,7 +59,14 @@ abstract class Ovio
 
     protected function fetch($type, $query)
     {
-        $url = $this->base_url . '/' . $type . '/' . $this->api_name . '/' . $query;
+        if($type)
+        {
+            $url = $this->base_url . '/' . $type . '/' . $this->api_name . '/' . $query;
+        }
+        else
+        {
+            $url = $this->base_url . '/' . $this->api_name . '/' . $query;
+        }
 
         return $this->call($url);
     }
