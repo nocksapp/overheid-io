@@ -4,7 +4,7 @@ namespace Webeau\Ovio;
 
 class Kvk extends Ovio
 {
-    protected $api_name = 'kvk';
+    protected $api_name = 'openkvk';
 
     /**
      * Fetch information by kvk number
