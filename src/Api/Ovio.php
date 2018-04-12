@@ -13,10 +13,22 @@ abstract class Ovio
     protected $last_url;
     protected $last_data = null;
 
-    public function __construct($key)
+    public function __construct($key, $base_url = null, $api_name = null)
     {
         if (empty($key)) {
             throw new Exception('No API key given.');
+        }
+        
+        // Allow override of base url to use both API versions at the same time
+        if($base_url)
+        {
+            $this->base_url = $base_url;
+        }
+        
+        // Allow override of api name to use both API versions at the same time
+        if($api_name)
+        {
+            $this->api_name = $api_name;
         }
 
         $this->api_key = $key;
